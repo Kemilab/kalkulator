@@ -26,5 +26,67 @@ namespace kalkulator
         {
             this.InitializeComponent();
         }
+
+        private void textbox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            int a = Int32.Parse(textbox1.Text);
+            int b = Int32.Parse(textbox1.Text);
+            int c = a + b;
+            textblockans.Text=c.ToString();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            int a = Int32.Parse(textbox1.Text);
+            int b = Int32.Parse(textbox1.Text);
+            int c = a - b;
+            textblockans.Text = c.ToString();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            int a = Int32.Parse(textbox1.Text);
+            int b = Int32.Parse(textbox1.Text);
+            int c = a * b;
+            textblockans.Text = c.ToString();
+        }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            int a = Int32.Parse(textbox1.Text);
+            int b = Int32.Parse(textbox1.Text);
+            int c = a / b;
+            textblockans.Text = c.ToString();
+        }
+
+        private void textbox2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textblockans_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
