@@ -17,10 +17,10 @@
         <TextBox x:Name="textbox2" HorizontalAlignment="Left" Margin="631,532,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextChanged="textbox2_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="797,502,0,0" TextWrapping="Wrap" Text="=" VerticalAlignment="Top" TextAlignment="Center" FontWeight="Bold" FontSize="72" Height="103" Width="120"/>
         <TextBlock x:Name="textblockans" HorizontalAlignment="Left" Margin="1043,541,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" SelectionChanged="textblockans_SelectionChanged"/>
-        <RadioButton Content="RadioButton" Margin="1286,449,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-        <RadioButton Content="RadioButton" Margin="1286,527,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_1"/>
-        <RadioButton Content="RadioButton" Margin="1286,593,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_2"/>
-        <RadioButton Content="RadioButton" Margin="1286,663,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_2"/>
+        <RadioButton Content="DEKADSKI" Margin="1286,449,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Content="BINARNI" Margin="1286,527,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_1"/>
+        <RadioButton Content="OKATALNI" Margin="1286,593,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_2"/>
+        <RadioButton Content="HEXADEKADSKI" Margin="1286,663,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_3"/>
 
     </Grid>
 </Page>

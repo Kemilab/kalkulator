@@ -35,7 +35,7 @@ namespace kalkulator
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             int a = Int32.Parse(textbox1.Text);
-            int b = Int32.Parse(textbox1.Text);
+            int b = Int32.Parse(textbox2.Text);
             int c = a + b;
             textblockans.Text=c.ToString();
         }
@@ -43,7 +43,7 @@ namespace kalkulator
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             int a = Int32.Parse(textbox1.Text);
-            int b = Int32.Parse(textbox1.Text);
+            int b = Int32.Parse(textbox2.Text);
             int c = a - b;
             textblockans.Text = c.ToString();
         }
@@ -51,7 +51,7 @@ namespace kalkulator
         private void button3_Click(object sender, RoutedEventArgs e)
         {
             int a = Int32.Parse(textbox1.Text);
-            int b = Int32.Parse(textbox1.Text);
+            int b = Int32.Parse(textbox2.Text);
             int c = a * b;
             textblockans.Text = c.ToString();
         }
@@ -59,7 +59,7 @@ namespace kalkulator
         private void button4_Click(object sender, RoutedEventArgs e)
         {
             int a = Int32.Parse(textbox1.Text);
-            int b = Int32.Parse(textbox1.Text);
+            int b = Int32.Parse(textbox2.Text);
             int c = a / b;
             textblockans.Text = c.ToString();
         }
@@ -76,17 +76,30 @@ namespace kalkulator
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-
+            int decimalNumber = int.Parse(textblockans.Text);
+            string bin = Convert.ToString(decimalNumber, 10);
+            textblockans.Text = bin;
         }
 
         private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
         {
-
+            int decimalNumber = int.Parse(textblockans.Text);
+            string bin = Convert.ToString(decimalNumber, 2);
+            textblockans.Text = bin;
         }
 
         private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
         {
+            int decimalNumber = int.Parse(textblockans.Text);
+            string oct = Convert.ToString(decimalNumber, 8);
+            textblockans.Text = oct;
+        }
 
+        private void RadioButton_Checked_3(object sender, RoutedEventArgs e)
+        {
+            int decimalNumber = int.Parse(textblockans.Text);
+            string hex = Convert.ToString(decimalNumber, 16);
+            textblockans.Text = hex;
         }
     }
 }
